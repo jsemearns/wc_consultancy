@@ -17,7 +17,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from main import views as main_views
+
 urlpatterns = [
-    # url(r'^$')
-    url(r'^admin/', admin.site.urls),
+    url(r'^$',
+        main_views.HomeTemplateView.as_view(),
+        name='index'
+    ),
+    url(r'^admin/',
+        admin.site.urls),
 ]
