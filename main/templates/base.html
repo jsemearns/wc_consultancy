@@ -3,8 +3,8 @@
 <!doctype html>
 <html>
     <head>
-        <title>{% block title %}WC CONSULTANCY{% endblock%}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>WC CONSULTANCY {% block title %}{% endblock%}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="{% static 'main/materialize/css/materialize.css' %}"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="{% static 'main/materialize/css/style.css' %}"  media="screen,projection"/>
@@ -15,16 +15,15 @@
           {% include 'components/site_header.html' %}
         {% endblock %}
 
-        <div class="container">
-            {% block main %}{% endblock %}
-        </div>
+        {% block main %}{% endblock %}
 
         {% block footer %}
             {% include 'components/footer.html' %}
         {% endblock %}
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="{% static 'main/materialize/js/materialize.min.js' %}">
+        <script type="text/javascript" src="{% static 'main/materialize/js/materialize.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'main/materialize/js/init.js' %}"></script>
         {% block page_javascript %}
         {% endblock %}
     </body>

@@ -1,11 +1,20 @@
-<nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">WC Consultancy</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+{% load staticfiles %}
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container white">
+      <a href="#" class="brand-logo"><img class="responsive-img logo" src="{% static 'main/img/logo.png' %}"></a>
+      <ul class="right hide-on-med-and-down">
         <li><a href="#">Universities</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Sign Up</a></li>
       </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Universities</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Sign Up</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons wc-color">menu</i></a>
     </div>
 </nav>

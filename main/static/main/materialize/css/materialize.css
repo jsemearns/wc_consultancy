@@ -4067,7 +4067,6 @@ nav .brand-logo {
   font-size: 2.1rem;
   padding: 0;
   white-space: nowrap;
-  margin-left: 10px;
 }
 
 nav .brand-logo.center {
@@ -4955,7 +4954,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #0099FF;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
@@ -4963,7 +4962,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #0099FF;
 }
 
 .btn-floating {
