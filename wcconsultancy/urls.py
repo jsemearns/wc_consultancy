@@ -24,6 +24,10 @@ urlpatterns = [
         main_views.HomeTemplateView.as_view(),
         name='index'
     ),
-    url(r'^admin/',
+    url(r'^university/$',
+        main_views.UniversityTemplateView.as_view(),
+        name='universities'
+    ),
+    url(r'^pizzapasta/',
         admin.site.urls),
 ]
