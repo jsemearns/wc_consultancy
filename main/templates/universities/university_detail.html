@@ -19,7 +19,9 @@
                             <i class="material-icons wc-color">info_outline</i>{{ admission.get_program_type_display }} - {{  admission.get_admission_type_display}}
                         </div>
                         <div class="collapsible-body">
-                            <p>{{ admission.detail }}</p>
+                            {% if admission.detail %}
+                                <p>{{ admission.detail }}</p>
+                            {% endif %}
                             {% for requirement in admission.requirements.all %}
                                 <ul class="collection">
                                     <li class="collection-item">
