@@ -4,10 +4,10 @@
 {% block main %}
     <div class="container content">
         <h4>{{ university.name }}</h4>
-        <i class="tiny material-icons wc-color">room</i>{{ university.state.name }}
-        <i class="tiny material-icons wc-color">assessment</i>{{ university.acceptance_rate }}%
+        <i class="material-icons wc-color middle">room</i>{{ university.state.name }}
+        <i class="material-icons wc-color middle">assessment</i>{{ university.acceptance_rate }}%
         <a href="{{ university.website }}" target="_blank">
-            <i class="tiny material-icons wc-color">http</i>{{ university.website }}
+            <i class="material-icons wc-color middle">http</i>{{ university.website }}
         </a>
         <p>{{ university.background }}</p>
         {% if admissions %}
@@ -25,7 +25,7 @@
                             {% for requirement in admission.requirements.all %}
                                 <ul class="collection">
                                     <li class="collection-item">
-                                        <i class="tiny material-icons wc-color">label</i> {{ requirement.detail }}
+                                        <i class="material-icons wc-color middle">label</i> {{ requirement.detail }}
                                     </li>
                                 </ul>
                             {% endfor %}

@@ -2654,6 +2654,10 @@ i.large {
   font-size: 6rem;
 }
 
+i.middle {
+    vertical-align: middle;
+}
+
 img.responsive-img,
 video.responsive-video {
   max-width: 100%;
