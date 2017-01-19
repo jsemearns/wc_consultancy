@@ -20,14 +20,19 @@ from django.contrib import admin
 from main import views as main_views
 
 urlpatterns = [
-    url(r'^$',
-        main_views.HomeTemplateView.as_view(),
-        name='index'
-    ),
     url(r'^university/$',
         main_views.UniversityTemplateView.as_view(),
         name='universities'
     ),
+    url(r'^university/(?P<id>\d+)/$',
+        main_views.UniversityDetailTemplateView.as_view(),
+        name='university-detail'
+    ),
     url(r'^pizzapasta/',
-        admin.site.urls),
+        admin.site.urls
+    ),
+    url(r'^$',
+        main_views.HomeTemplateView.as_view(),
+        name='index'
+    )
 ]

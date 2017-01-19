@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block main %}
+    <div class="container content">
+        <h4>{{ university.name }}</h4>
+        <i class="tiny material-icons wc-color">room</i>{{ university.state.name }}
+        <i class="tiny material-icons wc-color">assessment</i>{{ university.acceptance_rate }}%
+        <a href="{{ university.website }}" target="_blank">
+            <i class="tiny material-icons wc-color">http</i>{{ university.website }}
+        </a>
+        <p>{{ university.background }}</p>
+        {% if admissions %}
+            <h5> Admission Requirements</h5>
+            <ul class="collapsible" data-collapsible="accordion">
+                {% for admission in admissions %}
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons wc-color">info_outline</i>{{ admission.get_program_type_display }} - {{  admission.get_admission_type_display}}
+                        </div>
+                        <div class="collapsible-body">
+                            <p>{{ admission.detail }}</p>
+                            {% for requirement in admission.requirements.all %}
+                                <ul class="collection">
+                                    <li class="collection-item">
+                                        <i class="tiny material-icons wc-color">label</i> {{ requirement.detail }}
+                                    </li>
+                                </ul>
+                            {% endfor %}
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+{% endblock %}

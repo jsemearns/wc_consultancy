@@ -1,2 +1,2 @@
 from home import HomeTemplateView
-from university import UniversityTemplateView
+from university import UniversityTemplateView, UniversityDetailTemplateView
