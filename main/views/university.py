@@ -1,7 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import TemplateView
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from main.models import (University, Admission, Requirement)
+
+UNIVERSITIES_PER_PAGE = 6
 
 
 class UniversityTemplateView(TemplateView):
@@ -10,7 +13,18 @@ class UniversityTemplateView(TemplateView):
     def get_context_data(self, *args, **kwargs):
         context = super(UniversityTemplateView, self).get_context_data(
                         *args, **kwargs)
-        context['universities'] = University.objects.all().order_by('name')
+        universities = University.objects.all().order_by('name')
+        paginator = Paginator(universities, UNIVERSITIES_PER_PAGE)
+        page = self.request.GET.get('page')
+        try:
+            univs = paginator.page(page)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            univs = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            univs = paginator.page(paginator.num_pages)
+        context['universities'] = univs
         return context
 
 
