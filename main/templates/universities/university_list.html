@@ -16,7 +16,11 @@
                         </a>
                     </div>
                     <div class="card-action">
-                      <a class="truncate" href="{{ university.website }}" target="_blank">{{ university.website }}</a>
+                      {% if university.website %}
+                        <a class="truncate" href="{{ university.website }}" target="_blank">{{ university.website }}</a>
+                      {% else %}
+                        N/A
+                      {% endif %}
                     </div>
               </div>
             </div>
