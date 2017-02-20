@@ -29,17 +29,25 @@
     {% else %}
         <i class="small material-icons">info_outline</i><p>Oops! No universities are available for now!</p>
     {% endif %}
-    <ul class="pagination">
-        {% if universities.has_previous %}
-            <li class="waves-effect"><a href="?page={{ universities.previous_page_number }}"><i class="material-icons">chevron_left</i></a></li>
-            <li class="waves-effect"><a href="?page={{ universities.previous_page_number }}">{{ universities.previous_page_number }}</a></li>
-        {% endif %}
-        <li class="active waves-effect"><a href="#">{{ universities.number }}</a></li>
-        {% if universities.has_next %}
-            <li class="waves-effect"><a href="?page={{ universities.next_page_number }}">{{ universities.next_page_number }}</a></li>
-            <li class="waves-effect"><a href="?page={{ universities.next_page_number }}"><i class="material-icons">chevron_right</i></a></li>
-        {% endif %}
-    </ul>
+    {% if universities.has_other_pages %}
+        <ul class="pagination">
+            {% if universities.has_previous %}
+                <li class="waves-effect"><a href="?page={{ universities.previous_page_number }}"><i class="material-icons">chevron_left</i></a></li>
+                <!-- <li class="waves-effect"><a href="?page={{ universities.previous_page_number }}">{{ universities.previous_page_number }}</a></li> -->
+            {% endif %}
+            {% for i in universities.paginator.page_range %}
+                {% if universities.number == i %}
+                    <li class="active waves-effect"><a href="#">{{ universities.number }}</a></li>
+                {% else %}
+                    <li class="waves-effect"><a href="?page={{ i }}">{{ i }}</a></li>
+                {% endif %}
+            {% endfor %}
+            {% if universities.has_next %}
+                <!-- <li class="waves-effect"><a href="?page={{ universities.next_page_number }}">{{ universities.next_page_number }}</a></li> -->
+                <li class="waves-effect"><a href="?page={{ universities.next_page_number }}"><i class="material-icons">chevron_right</i></a></li>
+            {% endif %}
+        </ul>
+    {% endif %}
     </div>
 {% endblock %}
 {% block page_javascript %}

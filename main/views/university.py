@@ -19,10 +19,8 @@ class UniversityTemplateView(TemplateView):
         try:
             univs = paginator.page(page)
         except PageNotAnInteger:
-            # If page is not an integer, deliver first page.
             univs = paginator.page(1)
         except EmptyPage:
-            # If page is out of range (e.g. 9999), deliver last page of results.
             univs = paginator.page(paginator.num_pages)
         context['universities'] = univs
         return context
