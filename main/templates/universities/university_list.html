@@ -37,9 +37,7 @@
             {% for i in universities.paginator.page_range %}
                 {% if universities.number == i %}
                     <li class="active waves-effect"><a href="#">{{ universities.number }}</a></li>
-                {% elif universities.number|add:"-{{i}}" <= 2 %}
-                    <li class="waves-effect"><a href="?page={{ i }}">{{ i }}</a></li>
-                {% elif universities.number|add:"-{{i}}" >= 2 %}
+                {% else %}
                     <li class="waves-effect"><a href="?page={{ i }}">{{ i }}</a></li>
                 {% endif %}
             {% endfor %}
