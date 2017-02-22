@@ -7,10 +7,15 @@
         <div class="row">
         {% for university in universities %}
             <div class="col s4">
-                <div class="card blue-grey darken-1 hoverable university-item">
+                <div class="card large blue-grey darken-1 hoverable university-item">
                     <div class="card-content white-text">
                         <a class="white-text" href="{% url 'university-detail' university.pk %}">
-                            <img src="{% static 'main/img/book.jpg' %}" alt="" class="circle responsive-img">
+                            {% if university.logo %}
+                                <img src="{{ university.logo.url }}" alt="" class="circle responsive-img">
+                            {% else %}
+                                <img src="{% static 'main/img/book.jpg' %}" alt="" class="circle responsive-img">
+                                <!-- <img src="https://cdn.auburn.edu/2016/_assets/images/auburn-logo-horizontal.svg" alt="" class="circle responsive-img"> -->
+                            {% endif %}
                             <span class="truncate card-title">{{ university.name }}</span>
                             <p class="wc-truncate">{{ university.background }}</p>
                         </a>

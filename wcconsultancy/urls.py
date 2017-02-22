@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.conf.urls.static import static
+from django.conf import settings
 
 from main import views as main_views
 
@@ -35,4 +37,4 @@ urlpatterns = [
         main_views.HomeTemplateView.as_view(),
         name='index'
     )
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
