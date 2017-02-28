@@ -11,7 +11,7 @@ class University(models.Model):
     state = models.ForeignKey(State)
     acceptance_rate = models.FloatField(blank=True, null=True)
     website = models.URLField(blank=True, null=True)
-    logo = models.ImageField(upload_to='img/logos', null=True)
+    logo = models.ImageField(upload_to='img/logos', blank=True, null=True)
     logo_link = models.CharField(max_length=512, null=True)
 
     def __unicode__(self):
