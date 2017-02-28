@@ -4,8 +4,12 @@ from main.models import (University, TotalStudents, Admission,
                          Requirement, Scholarship, Eligibility,
                          State, Tuition, Fee)
 
+class UniversityAdmin(admin.ModelAdmin):
+    search_fields = ['name', 'website']
+
+
 # Register your models here.
-admin.site.register(University)
+admin.site.register(University, UniversityAdmin)
 admin.site.register(TotalStudents)
 admin.site.register(Admission)
 admin.site.register(Requirement)

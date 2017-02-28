@@ -12,9 +12,10 @@
                         <a class="white-text" href="{% url 'university-detail' university.pk %}">
                             {% if university.logo %}
                                 <img src="{{ university.logo.url }}" alt="" class="circle responsive-img">
+                            {% elif university.logo_link %}
+                                <img src="{{ university.logo_link }}" alt="" class="circle responsive-img">
                             {% else %}
                                 <img src="{% static 'main/img/book.jpg' %}" alt="" class="circle responsive-img">
-                                <!-- <img src="https://cdn.auburn.edu/2016/_assets/images/auburn-logo-horizontal.svg" alt="" class="circle responsive-img"> -->
                             {% endif %}
                             <span class="truncate card-title">{{ university.name }}</span>
                             <p class="wc-truncate">{{ university.background }}</p>
@@ -54,5 +55,6 @@
     </div>
 {% endblock %}
 {% block page_javascript %}
+    <script type="text/javascript" src="{% static 'main/js/dotdotdot/dotdotdot.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'main/js/university/university_list.js' %}"></script>
 {% endblock %}
