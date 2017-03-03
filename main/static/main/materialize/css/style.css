@@ -82,3 +82,8 @@ img.logo {
 .card {
     height: auto;
 }
+
+.wc-seal-size {
+    width: 120px;
+    height: 120px;
+}
