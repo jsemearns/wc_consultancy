@@ -15,7 +15,7 @@
 {"website": ["https://www.coloradomesa.edu"], "image_links": ["https://www.coloradomesa.edu/_files/css/images/cmu-logo.png"]}
 {"website": ["https://www.columbia.edu/"], "image_links": []}
 {"website": ["https://www.cornell.edu"], "image_links": []}
-{"website": ["http://www.jjay.cuny.edu"], "image_links": ["http://www.jjay.cuny.edusites/all/themes/johnjaytpl/images/logo.png", "http://www.jjay.cuny.edusites/all/themes/johnjaytpl/images/logo_footer.png", "http://www.jjay.cuny.edusites/all/themes/johnjaytpl/images/cuny_logo.png"]}
+{"website": ["http://www.jjay.cuny.edu"], "image_links": ["http://www.jjay.cuny.edu/sites/all/themes/johnjaytpl/images/logo.png", "http://www.jjay.cuny.edu/sites/all/themes/johnjaytpl/images/logo_footer.png", "http://www.jjay.cuny.edu/sites/all/themes/johnjaytpl/images/cuny_logo.png"]}
 {"website": ["http://www.dartmouth.edu"], "image_links": []}
 {"website": ["http://www.duke.edu"], "image_links": ["http://www.duke.edu/assets/img/dukelogo_white.svg", "http://www.duke.edu/assets/img/duketoday-logo.svg", "http://www.duke.edu/assets/img/dukelogo_white.svg"]}
 {"website": ["http://www.emory.edu/"], "image_links": ["http://www.emory.edu/_includes/images/system/university-logo-high-res.png"]}
@@ -29,17 +29,17 @@
 {"website": ["http://www.hws.edu"], "image_links": ["http://www.hws.edu/images/logo-nav.png", "http://www.hws.edu/images/logo-stacked-reversed.png"]}
 {"website": ["http://www.icahn.mssm.edu"], "image_links": []}
 {"website": ["http://www.iastate.edu"], "image_links": []}
-{"website": ["http://www.jhu.edu"], "image_links": ["http://www.jhu.edutheme/images/logos/university-logo-small-horizontal-white-43ab279882.png", "http://www.jhu.edutheme/images/logos/university-logo-small-horizontal-white-43ab279882.png", "http://www.jhu.edutheme/images/logos/university-logo-small-vertical-white-87a5d6072d.png", "http://www.jhu.edutheme/images/logos/university-logo-small-horizontal-white-no-clear-space-e44019a003.png", "http://www.jhu.edutheme/images/logos/university-logo-small-vertical-white-no-clear-space-29e2bdee83.png"]}
+{"website": ["http://www.jhu.edu"], "image_links": ["http://www.jhu.edu/theme/images/logos/university-logo-small-horizontal-white-43ab279882.png", "http://www.jhu.edu/theme/images/logos/university-logo-small-horizontal-white-43ab279882.png", "http://www.jhu.edu/theme/images/logos/university-logo-small-vertical-white-87a5d6072d.png", "http://www.jhu.edu/theme/images/logos/university-logo-small-horizontal-white-no-clear-space-e44019a003.png", "http://www.jhu.edu/theme/images/logos/university-logo-small-vertical-white-no-clear-space-29e2bdee83.png"]}
 {"website": ["http://www.juilliard.edu"], "image_links": ["http://www.juilliard.edu/sites/juilliard.edu/themes/juilliard/images/juilliardlogomobile.png", "http://www.juilliard.edu/sites/juilliard.edu/themes/juilliard/images/juilliardlogo.png"]}
 {"website": ["http://www1.lehigh.edu"], "image_links": ["http://www1.lehigh.edu/sites/all/themes/bootstrap/images/lehigh_university_nav_logo.png", "http://www1.lehigh.edu/sites/default/files/logo_footer_lehighuniversity.png"]}
 {"website": ["http://www.lynn.edu"], "image_links": []}
 {"website": ["http://www.manhattan.edu"], "image_links": []}
 {"website": ["http://sfs.mit.edu"], "image_links": []}
-{"website": ["http://www.mayo.edu"], "image_links": ["http://www.mayo.edu-/media/images/mayologo.ashx", "http://www.mayo.edustyles/img/gbs/logo-mayoclinic-mobile.png"]}
-{"website": ["http://www.mcw.edu"], "image_links": ["http://www.mcw.eduFileLibrary/ImageLibrary/mcwgreenlogo.gif", "http://www.mcw.eduFileLibrary/ImageLibrary/mcwgreenlogo.gif", "http://www.mcw.educlientcss/images/mcwrwd2/mcwlogo.gif"]}
+{"website": ["http://www.mayo.edu"], "image_links": ["http://www.mayo.edu/-/media/images/mayologo.ashx", "http://www.mayo.edu/styles/img/gbs/logo-mayoclinic-mobile.png"]}
+{"website": ["http://www.mcw.edu"], "image_links": ["http://www.mcw.edu/FileLibrary/ImageLibrary/mcwgreenlogo.gif", "http://www.mcw.eduFileLibrary/ImageLibrary/mcwgreenlogo.gif", "http://www.mcw.educlientcss/images/mcwrwd2/mcwlogo.gif"]}
 {"website": ["http://www.miamioh.edu"], "image_links": []}
 {"website": ["http://www.mcw.edu"], "image_links": ["http://www.mcw.eduFileLibrary/ImageLibrary/mcwgreenlogo.gif", "http://www.mcw.eduFileLibrary/ImageLibrary/mcwgreenlogo.gif", "http://www.mcw.educlientcss/images/mcwrwd2/mcwlogo.gif"]}
-{"website": ["http://www.nyu.edu"], "image_links": ["http://www.nyu.eduFileLibrary/ImageLibrary/mcwgreenlogo.gif", "http://www.nyu.eduFileLibrary/ImageLibrary/mcwgreenlogo.gif", "http://www.nyu.educlientcss/images/mcwrwd2/mcwlogo.gif"]}
+{"website": ["http://www.nyu.edu"], "image_links": ["http://www.nyu.edu/FileLibrary/ImageLibrary/mcwgreenlogo.gif", "http://www.nyu.eduFileLibrary/ImageLibrary/mcwgreenlogo.gif", "http://www.nyu.educlientcss/images/mcwrwd2/mcwlogo.gif"]}
 {"website": ["http://www.ncsu.edu"], "image_links": []}
 {"website": ["http://www.northeastern.edu"], "image_links": ["http://www.northeastern.edu/images/logo.png"]}
 {"website": ["http://www.osu.edu"], "image_links": []}

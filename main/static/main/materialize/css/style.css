@@ -58,12 +58,13 @@ footer.page-footer {
 }
 
 img.logo {
-    width: 122px;
+    width: 100px;
     height: auto;
 }
 
 .wc-color {
     color: #0099FF;
+    /*color: #6a969d;*/
 }
 
 .content {
