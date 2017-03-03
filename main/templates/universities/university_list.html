@@ -11,7 +11,7 @@
                     <div class="card-content white-text">
                         <a class="white-text" href="{% url 'university-detail' university.pk %}">
                             {% if university.logo %}
-                                <img src="{{ university.logo.url }}" alt="" class="circle responsive-img wc-seal-size">
+                                <img src="{{ university.logo.url }}" alt="" class="circle responsive-img">
                             {% elif university.logo_link %}
                                 <img src="{{ university.logo_link }}" alt="" class="circle responsive-img">
                             {% else %}
