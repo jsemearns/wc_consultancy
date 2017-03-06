@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # third party apps
+    'django_s3_storage',
+
     # user-created apps
     'main',
 ]
@@ -139,6 +142,25 @@ MEDIA_URL = '/media/'
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
+# s3 settings
+DEFAULT_FILE_STORAGE = 'django_s3_storage.storage.S3Storage'
+STATICFILES_STORAGE = 'django_s3_storage.storage.StaticS3Storage'
+
+# The AWS region to connect to.
+AWS_REGION = "ap-southeast-1"
+
+# The AWS access key to use.
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+
+# The AWS secret access key to use.
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+
+AWS_S3_BUCKET_NAME = "wc-consultancy"
+
+AWS_S3_BUCKET_AUTH_STATIC = False
+
+AWS_S3_BUCKET_NAME_STATIC = 'wc-consultancy'
 
 try:
     from local_settings import *
