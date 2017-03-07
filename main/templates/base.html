@@ -11,6 +11,14 @@
     </head>
 
     <body>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="{% static 'main/materialize/js/materialize.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'main/materialize/js/init.js' %}"></script>
+        <script type="text/javascript" src="{% static 'main/js/zepto/zepto.js' %}"></script>
+
+        {% block page_javascript %}
+        {% endblock %}
+
         {% block site_header %}
           {% include 'components/site_header.html' %}
         {% endblock %}
@@ -19,13 +27,6 @@
 
         {% block footer %}
             {% include 'components/footer.html' %}
-        {% endblock %}
-
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="{% static 'main/materialize/js/materialize.min.js' %}"></script>
-        <script type="text/javascript" src="{% static 'main/materialize/js/init.js' %}"></script>
-        <script type="text/javascript" src="{% static 'main/js/zepto/zepto.js' %}"></script>
-        {% block page_javascript %}
         {% endblock %}
     </body>
 </html>

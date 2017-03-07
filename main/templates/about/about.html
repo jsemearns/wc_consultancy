@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block main %}
+    <div class="container">
+        <br />
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img class="darken-img" src="{% static 'main/img/rsz_carousel1.jpg' %}">
+                    <div class="caption center-align">
+                        <h3>What is W&amp;C?</h3>
+                        <h5 class="light grey-text text-lighten-3">
+                            W&amp;C is an international
+                            education service provider that helps students
+                            from emerging economies to obtain world-class education in the United States
+                        </h5>
+                    </div>
+                </li>
+                <li>
+                    <img class="darken-img" src="{% static 'main/img/rsz_carousel2.jpg' %}">
+                    <div class="caption center-align">
+                        <h3>What do we do?</h3>
+                        <h4>Provide <strong><i>SMART</i></strong> Information</h4>
+                        <h5 class="light grey-text text-lighten-3">
+                            Our database was designed to provide students the access to smart information
+                            connecting them to over 100 colleges and universities in the United States.
+                        </h5>
+                    </div>
+                </li>
+                <li>
+                    <img class="darken-img" src="{% static 'main/img/rsz_carousel3.jpg' %}">
+                    <div class="caption center-align">
+                        <h3>Evaluation &amp; Guidance</h3>
+                        <h5 class="light grey-text text-lighten-3">
+                            Our team evaluates and guides students in the application process.
+                        </h5>
+                    </div>
+                </li>
+                <li>
+                    <img class="darken-img" src="{% static 'main/img/rsz_carousel4.jpg' %}">
+                    <div class="caption center-align">
+                        <h3>Information Driven</h3>
+                        <h5 class="light grey-text text-lighten-3">
+                            We collect only the most pivotal information that are directly derived from
+                            school administrators, program directors or admission officers.
+                        </h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <h3 class="center">About Us</h3>
+        <div class="row">
+            <p class="light">
+                W&amp;C was developed by a group of international scholars who are passionate
+                and committed to helping students achieve higher education.
+                Our experience drives us to inspire talented individuals to conquer the world of
+                bright ideas. Studying in the United States has tremendous opportunities and we want
+                our clients to experience them. However, as international students ourselves we
+                understand every obstacle international students face before, during and after the admission process.
+                W&amp;C was created to help students in emerging economies to fulfill their own dreams.
+            </p>
+        </div>
+    </div>
+{% endblock %}

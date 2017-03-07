@@ -1,2 +1,3 @@
 from home import HomeTemplateView
 from university import UniversityTemplateView, UniversityDetailTemplateView
+from about import AboutTemplateView

@@ -30,6 +30,10 @@ urlpatterns = [
         main_views.UniversityDetailTemplateView.as_view(),
         name='university-detail'
     ),
+    url(r'^about/$',
+        main_views.AboutTemplateView.as_view(),
+        name='about'
+    ),
     url(r'^pizzapasta/',
         admin.site.urls
     ),
