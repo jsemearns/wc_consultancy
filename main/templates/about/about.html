@@ -4,62 +4,169 @@
 {% block main %}
     <div class="container">
         <br />
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <img class="darken-img" src="{% static 'main/img/rsz_carousel1.jpg' %}">
-                    <div class="caption center-align">
-                        <h3>What is W&amp;C?</h3>
-                        <h5 class="light grey-text text-lighten-3">
-                            W&amp;C is an international
-                            education service provider that helps students
-                            from emerging economies to obtain world-class education in the United States
-                        </h5>
-                    </div>
-                </li>
-                <li>
-                    <img class="darken-img" src="{% static 'main/img/rsz_carousel2.jpg' %}">
-                    <div class="caption center-align">
-                        <h3>What do we do?</h3>
-                        <h4>Provide <strong><i>SMART</i></strong> Information</h4>
-                        <h5 class="light grey-text text-lighten-3">
-                            Our database was designed to provide students the access to smart information
-                            connecting them to over 100 colleges and universities in the United States.
-                        </h5>
-                    </div>
-                </li>
-                <li>
-                    <img class="darken-img" src="{% static 'main/img/rsz_carousel3.jpg' %}">
-                    <div class="caption center-align">
-                        <h3>Evaluation &amp; Guidance</h3>
-                        <h5 class="light grey-text text-lighten-3">
-                            Our team evaluates and guides students in the application process.
-                        </h5>
-                    </div>
-                </li>
-                <li>
-                    <img class="darken-img" src="{% static 'main/img/rsz_carousel4.jpg' %}">
-                    <div class="caption center-align">
-                        <h3>Information Driven</h3>
-                        <h5 class="light grey-text text-lighten-3">
-                            We collect only the most pivotal information that are directly derived from
-                            school administrators, program directors or admission officers.
-                        </h5>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <h3 class="center">About Us</h3>
         <div class="row">
-            <p class="light">
-                W&amp;C was developed by a group of international scholars who are passionate
-                and committed to helping students achieve higher education.
-                Our experience drives us to inspire talented individuals to conquer the world of
-                bright ideas. Studying in the United States has tremendous opportunities and we want
-                our clients to experience them. However, as international students ourselves we
-                understand every obstacle international students face before, during and after the admission process.
-                W&amp;C was created to help students in emerging economies to fulfill their own dreams.
-            </p>
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img class="darken-img" src="{% static 'main/img/rsz_carousel1.jpg' %}">
+                        <div class="caption center-align">
+                            <h3>What is W&amp;C?</h3>
+                            <h5 class="light grey-text text-lighten-3">
+                                W&amp;C is an international
+                                education service provider that helps students
+                                from emerging economies to obtain world-class education in the United States
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="darken-img" src="{% static 'main/img/rsz_carousel2.jpg' %}">
+                        <div class="caption center-align">
+                            <h3>What do we do?</h3>
+                            <h4>Provide <strong><i>SMART</i></strong> Information</h4>
+                            <h5 class="light grey-text text-lighten-3">
+                                Our database was designed to provide students the access to smart information
+                                connecting them to over 100 colleges and universities in the United States.
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="darken-img" src="{% static 'main/img/rsz_carousel3.jpg' %}">
+                        <div class="caption center-align">
+                            <h3>Evaluation &amp; Guidance</h3>
+                            <h5 class="light grey-text text-lighten-3">
+                                Our team evaluates and guides students in the application process.
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="darken-img" src="{% static 'main/img/rsz_carousel4.jpg' %}">
+                        <div class="caption center-align">
+                            <h3>Information Driven</h3>
+                            <h5 class="light grey-text text-lighten-3">
+                                We collect only the most pivotal information that are directly derived from
+                                school administrators, program directors or admission officers.
+                            </h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s5">
+                <div class="card-panel blue">
+                    <h5 class="white-text">About Us</h5>
+                    <div style="text-align: justify">
+                        <span class="white-text">
+                            W&amp;C was developed by a group of international scholars who are passionate
+                            and committed to helping students achieve higher education.
+                            Our experience drives us to inspire talented individuals to conquer the world of
+                            bright ideas. Studying in the United States has tremendous opportunities and we want
+                            our clients to experience them. However, as international students ourselves we
+                            understand every obstacle international students face before, during and after the admission process.
+                            W&amp;C was created to help students in emerging economies to fulfill their own dreams.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s7">
+                <div class="row" style="margin-bottom: 1px">
+                    <div class="center">
+                        <h4 class="wc-color" style="margin-bottom: 1px">The Team</h4>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 1px">
+                    <div class="center">
+                        <span class="wc-color light">(click photo for bio)</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s1" style="margin-left: 27px"></div>
+                    <a href="#modal1">
+                        <div class="col s3">
+                            <img class="circle responsive-img" src="{% static 'main/img/zhang.png' %}">
+                            <div class="center"><span>Zhang</span></div>
+                            <div class="center"><span class="center light">Co-Founder</span></div>
+                        </div>
+                    </a>
+                    <a href="#modal2">
+                        <div class="col s3">
+                            <img class="circle responsive-img" src="{% static 'main/img/zhang.png' %}">
+                            <div class="center"><span>Zhang</span></div>
+                            <div class="center"><span class="center light">Co-Founder</span></div>
+                        </div>
+                    </a>
+                    <a href="#modal3">
+                        <div class="col s3">
+                            <img class="circle responsive-img" src="{% static 'main/img/zhang.png' %}">
+                            <div class="center"><span>Zhang</span></div>
+                            <div class="center"><span class="center light">Co-Founder</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col s3" style="margin-left: 10px"></div>
+                    <a href="#modal4">
+                    <div class="col s3">
+                        <img class="circle responsive-img" src="{% static 'main/img/zhang.png' %}">
+                        <div class="center"><span>Zhang</span></div>
+                        <div class="center"><span class="center light">Co-Founder</span></div>
+                    </div>
+                    </a>
+                    <a href="#modal5">
+                        <div class="col s3">
+                            <img class="circle responsive-img" src="{% static 'main/img/zhang.png' %}">
+                            <div class="center"><span>Zhang</span></div>
+                            <div class="center"><span class="center light">Co-Founder</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Name Here</h4>
+                <p>{% lorem %}</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h4>Name Here</h4>
+                <p>{% lorem %}</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <h4>Name Here</h4>
+                <p>{% lorem %}</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <h4>Name Here</h4>
+                <p>{% lorem %}</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <h4>Name Here</h4>
+                <p>{% lorem %}</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
         </div>
     </div>
 {% endblock %}

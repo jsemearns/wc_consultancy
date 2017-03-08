@@ -67,6 +67,10 @@ img.logo {
     /*color: #6a969d;*/
 }
 
+.wc-bg-color {
+    background-color: #0099FF;
+}
+
 .content {
     margin-top: 15px;
 }
@@ -100,4 +104,12 @@ img.logo {
 .darken-img {
     opacity: 0.4;
     filter: alpha(opacity=40);
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+.lower-team-members {
+    margin-left: 20px;
 }
